@@ -99,6 +99,24 @@ h4, h5, h6 {
     transform: translateY(-3px);
 }
 
+/* Content Styling */
+.card-body h4 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.card-body h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
 .language-selection {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
