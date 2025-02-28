@@ -50,19 +50,26 @@ h4, h5, h6 {
 
 .card-body {
     background-color: var(--card-background-color);
-    transition: 0.25s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 2rem;
     font-size: 1.1rem;
-    line-height: 1.6;
 }
 
 .card-body:hover {
-    transform: scale(1.01);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .card-body img {
     display: block; 
     margin: 0 auto; 
     width: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem !important;
 }
 
 .social-links {
