@@ -46,6 +46,95 @@ body {
     min-height: 100vh;
 }
 
+/* Navigation Bar */
+.navbar {
+    background: var(--bg-secondary);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.theme-selector {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+
+}
+
+.theme-btn {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark-theme-btn {
+    background-color: var(--dark-btn);
+}
+
+.light-theme-btn {
+    background-color: var(--light-btn);
+}
+
+.purple-theme-btn {
+    background-color: var(--purple-btn);
+}
+
+.blue-theme-btn {
+    background-color: var(--blue-btn);
+}
+
+.language-select {
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.language-select:hover {
+    border: var(--accent);
+}
+
 h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -124,94 +213,6 @@ h4, h5, h6 {
     border-radius: 2px;
 }
 
-.language-select {
-    padding: 0.5rem 1rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text-primary);
-    font-size: 0.95rem;
-    cursor: pointer;
-    outline: none;
-    transition: border 0.2s ease;
-}
-
-.language-select:hover {
-    border: var(--accent);
-}
-
-.theme-btn {
-    width: 32px;
-    height: 32px;
-    border: 2px solid var(--border);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; 
-}
-
-.theme-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.dark-theme-btn {
-    background-color: var(--dark-btn);
-}
-
-.light-theme-btn {
-    background-color: var(--light-btn);
-}
-
-.purple-theme-btn {
-    background-color: var(--purple-btn);
-}
-
-.blue-theme-btn {
-    background-color: var(--blue-btn);
-}
-
-/* Navigation Bar */
-.navbar {
-    background: var(--bg-secondary);
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
-
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.brand {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.controls {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.theme-selector {
-    display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    background: var(--bg-card);
-    border-radius: 12px;
-    border: 1px solid var(--border);
-
-}
 
 /* Responsive Adjustments for small screens */
 
