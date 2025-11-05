@@ -1,6 +1,12 @@
 function changeLanguage() {
-    const lang = document.getElementById("languageSelect").value;
-    fetch(`./translations/${lang}.json`)
+    var selectedLanguage = document.getElementById("languageSelect").value;
+    // Store the selected language in local storage
+    localStorage.setItem("languageSelect", selectedLanguage);
+    fetchLanguageContent(selectedLanguage);
+}
+
+function fetchLanguageContent(language) {
+    fetch(`./translations/${language}.json`)
     .then(response => response.json())
     .then(data => {
         document.getElementById("heroName").textContent = data.heroName;
@@ -46,6 +52,7 @@ function changeLanguage() {
         const goalsHTML = data.goals.map(goal => `<li class="goal-item">${goal}</li>`).join('');
         document.getElementById("goalsList").innerHTML = goalsHTML;
     })
+    .catch(error => console.error('Error fetching translations:', error));
 
 }
 
@@ -54,13 +61,16 @@ function changeTheme(theme) {
 }
 
 function loadInitialLanguage() {
-    const lang = document.getElementById("languageSelect").value;
-    changeLanguage();
+    var storedLanguage = localStorage.getItem("languageSelect") || "en";
+    document.getElementById("languageSelect").value = storedLanguage;
+    fetchLanguageContent(storedLanguage);
 }
 
 function loadInitialTheme() {
     changeTheme("dark");
 }
 
-loadInitialTheme();
-loadInitialLanguage();
+document.addEventListener("DOMContentLoaded", function () {
+    loadInitialTheme();
+    loadInitialLanguage();
+});
