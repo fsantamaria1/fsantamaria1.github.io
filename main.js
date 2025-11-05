@@ -58,6 +58,8 @@ function fetchLanguageContent(language) {
 
 function changeTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
+    // Store the selected theme in local storage
+    localStorage.setItem("selectedTheme", theme);
 }
 
 function loadInitialLanguage() {
@@ -67,7 +69,8 @@ function loadInitialLanguage() {
 }
 
 function loadInitialTheme() {
-    changeTheme("dark");
+    var storedTheme = localStorage.getItem("selectedTheme") || "dark"; 
+    changeTheme(storedTheme);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
