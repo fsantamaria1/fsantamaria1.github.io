@@ -1,42 +1,102 @@
 {
   "heroName": "Fredy Santamaria",
-  "heroTitle": "Software Engineer",
-  "heroTagline": "Passionate about learning, coding, and baking. Building efficient solutions that make a difference.",
+  "heroTitle": "Software Engineer | Data Analytics",
+  "heroEducation": "M.S. Data Analytics (In Progress) • B.S. Computer Science • A.S. Cybersecurity",
+  "heroTagline": "Building efficient, scalable solutions that drive measurable business impact. Passionate about automation, data-driven insights, and continuous learning.",
   "journeyTitle": "My Journey",
   "journey": [
-      { "date": "April 2020", "title": "Started in Tech", "desc": "Began as an IT Support Technician in Kokomo, Indiana, gaining hands-on experience with technology and business operations." },
-      { "date": "April 2022", "title": "Promoted to Software Engineer", "desc": "Advanced to Software Engineer role, focusing on automation, application development, and process optimization." },
-      { "date": "Present", "title": "Growing & Learning", "desc": "Continuously expanding skills in modern web technologies, data analytics, and machine learning while contributing to impactful projects." }
+    {
+      "date": "January 2020 - September 2020",
+      "title": "Student Ambassador & Lab Assistant | Ivy Tech",
+      "desc": "Provided technical support to students with software, hardware, and network issues. Engaged with prospective students about college programs and events."
+    },
+    {
+      "date": "April 2020 - April 2022",
+      "title": "IT Support Technician | Berry It",
+      "desc": "Installed and optimized MySQL and MS SQL database systems. Led internal projects including migrations, software development, and hardware upgrades. Reduced system downtime through proactive technical support."
+    },
+    {
+      "date": "April 2022 - Present",
+      "title": "Software Engineer | Berry It",
+      "desc": "Full-stack development and automation specialist. Building production-grade applications that solve real business problems and deliver measurable results."
+    }
   ],
-  "experienceTitle": "Experience",
-  "experience": {
-      "company": "Software Engineer at BerryIt, Inc.",
-      "highlights": [
-          "Automated critical business processes with Python, reducing execution time by 25%",
-          "Built scalable applications using Python, JavaScript, C#, Flask, SQL, and Docker",
-          "Led development of time-tracking desktop app, scaling from 5 to 60+ concurrent users",
-          "Improved response times from 10 seconds to under 2 seconds through optimization"
-      ]
+  "impactTitle": "Key Achievements",
+  "impact": [
+    "Built geospatial API integrating Vetro data to automate 811 ticket routing — saved ~30 hours/week",
+    "Led full-stack development of time-tracking desktop app (C#, Flask, MS SQL) — saved ~20 hours/week in admin overhead",
+    "Automated time adjustment reminders via ADP API and SlickText API — saved HR ~5 hours/week",
+    "Developed and maintained diverse production applications using Python, JavaScript, C#, Flask, SQL, Redis ensuring scalability and reliability"
+  ],
+  "educationTitle": "Education",
+  "education": [
+    {
+      "school": "Western Governors University",
+      "degree": "M.S. Data Analytics",
+      "status": "Expected April 2026"
+    },
+    {
+      "school": "Western Governors University",
+      "degree": "B.S. Computer Science",
+      "status": "Completed"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Cybersecurity",
+      "status": "Completed"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Liberal Arts",
+      "status": "Completed"
+    }
+  ],
+  "skillsTitle": "Technical Skills",
+  "skills": {
+    "expert": [
+      "Python",
+      "Flask",
+      "Django",
+      "SQL (MySQL, PostgreSQL, MS SQL)",
+      "Git",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "proficient": [
+      "Docker",
+      "REST APIs",
+      "Redis",
+      "C#",
+      "OOP",
+      "CI/CD",
+      "Agile",
+      "Nginx",
+      "jQuery",
+      "ETL"
+    ],
+    "learning": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Machine Learning",
+      "PyTorch",
+      "Scikit-Learn",
+      "TensorFlow",
+      "Apache Airflow",
+      "Azure (AZ-204)"
+    ]
   },
-  "skillsTitle": "Skills",
-  "skills": [
-      { "name": "Python", "category": "Expert" },
-      { "name": "Flask/Django", "category": "Expert" },
-      { "name": "JavaScript", "category": "Proficient" },
-      { "name": "SQL", "category": "Proficient" },
-      { "name": "Docker", "category": "Proficient" },
-      { "name": "Git", "category": "Proficient" },
-      { "name": "React", "category": "Learning" },
-      { "name": "ML/AI", "category": "Learning" }
-  ],
   "learningTitle": "Learning Approach",
-  "learning": "I believe in learning through reading, comparing, and observing. I dive deep into documentation, compare new concepts with existing knowledge like solving a puzzle, and enhance my understanding by watching how others use tools and technologies.",
+  "learning": "I believe in <strong>Reading, Comparing, and Observing</strong>. I dive deep into documentation, connect new concepts with existing knowledge like solving a puzzle, and enhance my understanding by watching how experienced developers use tools and technologies. This multi-faceted approach helps me not just learn syntax, but understand the 'why' behind technical decisions.",
   "goalsTitle": "Current Focus",
-  "goalsIntro": "As a Software Engineer, I recognize the endless opportunities for growth. Currently focusing on:",
+  "goalsIntro": "As a Software Engineer pursuing a Master's in Data Analytics, I'm focused on the intersection of software engineering and data science:",
   "goals": [
-      "Data Visualization & Analytics",
-      "Exploring Machine Learning",
-      "Enhancing UI/UX Design Skills",
-      "Contributing to Open Source"
+    "Mastering data visualization and analytics tools (Tableau, BigQuery, R)",
+    "Deepening machine learning expertise with PyTorch and TensorFlow",
+    "Building full-stack applications with React and Next.js",
+    "Preparing for Azure Developer Associate (AZ-204) certification",
+    "Contributing to open-source projects in data engineering"
   ]
 }

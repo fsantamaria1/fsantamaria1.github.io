@@ -1,4 +1,3 @@
-/* Define color variables for each color selector */
 :root {
     --dark-btn: #1a1a2e;
     --light-btn: #f8f9fa;
@@ -6,7 +5,6 @@
     --blue-btn: #3b82f6;
 }
 
-  /* Define color variables for each theme */
 :root[data-theme='dark'] {
     --bg-primary: #0f0f1e;
     --bg-secondary: #1a1a2e;
@@ -16,6 +14,7 @@
     --accent: #8b5cf6;
     --accent-hover: #a78bfa;
     --border: rgba(139, 92, 246, 0.2);
+    --success: #10b981;
 }
 
 :root[data-theme='light'] {
@@ -27,6 +26,7 @@
     --accent: #8b5cf6;
     --accent-hover: #7c3aed;
     --border: rgba(139, 92, 246, 0.15);
+    --success: #059669;
 }
 
 :root[data-theme='purple'] {
@@ -38,6 +38,7 @@
     --accent: #8b5cf6;
     --accent-hover: #7c3aed;
     --border: rgba(139, 92, 246, 0.25);
+    --success: #059669;
 }
 
 :root[data-theme='blue'] {
@@ -49,10 +50,17 @@
     --accent: #3b82f6;
     --accent-hover: #2563eb;
     --border: rgba(59, 130, 246, 0.25);
+    --success: #059669;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-primary);
+    background: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
@@ -104,7 +112,6 @@ body {
     background: var(--bg-card);
     border-radius: 12px;
     border: 1px solid var(--border);
-
 }
 
 .theme-btn {
@@ -113,7 +120,7 @@ body {
     border: 2px solid var(--border);
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .theme-btn:hover {
@@ -121,21 +128,10 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.dark-theme-btn {
-    background-color: var(--dark-btn);
-}
-
-.light-theme-btn {
-    background-color: var(--light-btn);
-}
-
-.purple-theme-btn {
-    background-color: var(--purple-btn);
-}
-
-.blue-theme-btn {
-    background-color: var(--blue-btn);
-}
+.dark-theme-btn { background: var(--dark-btn); }
+.light-theme-btn { background: var(--light-btn); }
+.purple-theme-btn { background: var(--purple-btn); }
+.blue-theme-btn { background: var(--blue-btn); }
 
 .language-select {
     padding: 0.5rem 1rem;
@@ -150,7 +146,7 @@ body {
 }
 
 .language-select:hover {
-    border: var(--accent);
+    border-color: var(--accent);
 }
 
 /* Hero Section */
@@ -181,7 +177,7 @@ body {
     right: 10px;
     width: 20px;
     height: 20px;
-    background: #10b981;
+    background: var(--success);
     border: 3px solid var(--bg-primary);
     border-radius: 50%;
     animation: pulse 2s infinite;
@@ -206,14 +202,38 @@ body {
 .hero .subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .education {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
 .hero .tagline {
     font-size: 1rem;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto 2rem;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.cert-badge {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 .social-links {
@@ -256,6 +276,7 @@ body {
 :root[data-theme='blue'] {
     --icon-filter: none;
 }
+
 /* Cards */
 .card {
     background: var(--bg-card);
@@ -334,57 +355,71 @@ body {
 .timeline-desc {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    margin-bottom: 0.5rem;
 }
 
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-}
-
-.skill-item {
-    background: var(--bg-secondary);
-    padding: 1rem;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid var(--border);
-    transition: all 0.3s ease;
-}
-
-.skill-item:hover {
+.impact-stat {
+    display: inline-block;
     background: var(--accent);
     color: white;
-    transform: scale(1.05);
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
 }
 
-.skill-category {
-    font-size: 0.75rem;
+.skill-section {
+    margin-bottom: 1.5rem;
+}
+
+.skill-section-title {
+    font-size: 0.875rem;
     color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 0.5rem;
     font-weight: 600;
+    margin-bottom: 0.75rem;
 }
 
-.skill-item:hover .skill-category {
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: var(--bg-secondary);
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.skill-tag:hover {
+    background: var(--accent);
     color: white;
+    transform: translateY(-2px);
 }
 
-.goal-list {
+.achievement-list {
     list-style: none;
     padding: 0;
 }
 
-.goal-item {
+.achievement-item {
     padding: 1rem;
     margin-bottom: 0.75rem;
     background: var(--bg-secondary);
     border-radius: 12px;
     border-left: 4px solid var(--accent);
+    color: var(--text-secondary);
     transition: all 0.3s ease;
 }
 
-.goal-item:hover {
+.achievement-item:hover {
     transform: translateX(8px);
     background: var(--accent);
     color: white;
@@ -412,10 +447,6 @@ body {
     .card {
         padding: 1.5rem;
     }
-
-    .skill-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
 }
 
 @media (max-width: 480px) {
@@ -427,5 +458,14 @@ body {
     .theme-selector {
         width: 100%;
         justify-content: center;
+    }
+
+    .certifications {
+        gap: 0.4rem;
+    }
+
+    .cert-badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
     }
 }

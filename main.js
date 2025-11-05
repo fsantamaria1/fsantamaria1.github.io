@@ -11,9 +11,11 @@ function fetchLanguageContent(language) {
     .then(data => {
         document.getElementById("heroName").textContent = data.heroName;
         document.getElementById("heroTitle").textContent = data.heroTitle;
+        document.getElementById("heroEducation").textContent = data.heroEducation;
         document.getElementById("heroTagline").textContent = data.heroTagline;
         document.getElementById("journeyTitle").textContent = data.journeyTitle;
-        document.getElementById("experienceTitle").textContent = data.experienceTitle;
+        document.getElementById("impactTitle").textContent = data.impactTitle;
+        document.getElementById("educationTitle").textContent = data.educationTitle;
         document.getElementById("skillsTitle").textContent = data.skillsTitle;
         document.getElementById("learningTitle").textContent = data.learningTitle;
         document.getElementById("goalsTitle").textContent = data.goalsTitle;
@@ -28,20 +30,43 @@ function fetchLanguageContent(language) {
         `).join('');
         document.getElementById("journeyContent").innerHTML = journeyHTML;
 
-        // Experience
-        const expHTML = `
-            <p style="font-weight: 600; color: var(--accent); margin-bottom: 1rem;">${data.experience.company}</p>
-            ${data.experience.highlights.map(h => `<p style="color: var(--text-secondary); margin-bottom: 0.75rem;">• ${h}</p>`).join('')}
-        `;
-        document.getElementById("experienceContent").innerHTML = expHTML;
+        // Key Impact
+        const impactHTML = data.impact.map(achievement => 
+            `<li class="achievement-item">${achievement}</li>`
+        ).join('');
+        document.getElementById("impactContent").innerHTML = impactHTML;
 
-        // Skills
-        const skillsHTML = data.skills.map(skill => `
-            <div class="skill-item">
-                <div class="skill-category">${skill.category}</div>
-                <div>${skill.name}</div>
+        // Education
+        const educationHTML = data.education.map(edu => `
+            <div style="margin-bottom: 1.25rem;">
+                <div style="font-weight: 600; color: var(--text-primary);">${edu.school}</div>
+                <div style="color: var(--text-secondary); font-size: 0.95rem;">${edu.degree}</div>
+                <div style="color: var(--accent); font-size: 0.875rem; font-weight: 500;">${edu.status}</div>
             </div>
         `).join('');
+        document.getElementById("educationContent").innerHTML = educationHTML;
+
+        // Skills
+        const skillsHTML = `
+            <div class="skill-section">
+        <div class="skill-section-title">${language === 'en' ? 'Expert' : 'Experto'}</div>
+        <div class="skill-tags">
+            ${data.skills.expert.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+        </div>
+    </div>
+    <div class="skill-section">
+        <div class="skill-section-title">${language === 'en' ? 'Proficient' : 'Competente'}</div>
+        <div class="skill-tags">
+            ${data.skills.proficient.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+        </div>
+    </div>
+    <div class="skill-section">
+        <div class="skill-section-title">${language === 'en' ? 'Currently Learning' : 'Aprendiendo Actualmente'}</div>
+        <div class="skill-tags">
+            ${data.skills.learning.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+        </div>
+    </div>
+`;
         document.getElementById("skillsContent").innerHTML = skillsHTML;
 
         // Learning
@@ -49,7 +74,7 @@ function fetchLanguageContent(language) {
 
         // Goals
         document.getElementById("goalsIntro").innerHTML = `<p style="color: var(--text-secondary); margin-bottom: 1.5rem;">${data.goalsIntro}</p>`;
-        const goalsHTML = data.goals.map(goal => `<li class="goal-item">${goal}</li>`).join('');
+        const goalsHTML = data.goals.map(goal => `<li class="achievement-item">${goal}</li>`).join('');
         document.getElementById("goalsList").innerHTML = goalsHTML;
     })
     .catch(error => console.error('Error fetching translations:', error));
