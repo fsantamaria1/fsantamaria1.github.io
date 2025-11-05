@@ -1,15 +1,42 @@
 {
-  "welcome": "Hi, I'm Fredy",
-  "about_me": "I love learning, coding, and baking",
-  "my_journey": "My Journey So Far",
-  "my_experience": "My Experience as a Developer",
-  "what_i_know": "What I Know",
-  "my_learning_approach": "My Learning Approach",
-  "my_short_term_goals": "My Short-Term Goals",
-  "my_journey_content": "<p>I started my tech career in April 2020 as an IT Support Technician at a local company in Kokomo, Indiana. During this time, I gained hands-on experience and deepened my understanding of technology.</p> <p>In April 2022, I was promoted to Software Engineer, where I began automating critical processes, developing applications, and optimizing business operations.</p> <p>My journey has been filled with continuous learning, innovation, and exciting challenges that drive my passion for software development.</p>",
-  "my_experience_content": "<p>Software Engineer at BerryIt, Inc.</p> <p>Automated key business processes with Python, reducing execution time by 25% and improving overall efficiency.</p> <p>Designed, developed, and maintained software solutions using Python, JavaScript, C#, Flask, SQL, Docker, and more to address evolving business needs.</p> <p>Led the development of a scalable desktop application for time tracking, improving concurrent user capacity from 5 to 60+ and reducing response time from 10 seconds to under 2 seconds.</p>",
-  "what_i_know_content": "<p>Proficient in: Python, Flask, Django, Docker, SQL (MySQL, PostgreSQL, MS SQL), Git, JavaScript, HTML, CSS, and more.</p> <p>Familiar with: Kotlin, Java, C#, Node.js, Express.js, Nginx, Redis, and related technologies.</p> <p>Currently learning: React, Next.js, and Machine Learning with Python.</p>",
-  "my_learning_approach_content": "<p>Reading, Comparing, and Observing.</p> <p>I dive deep into documentation and compare new knowledge with what I already know—like solving a puzzle! Additionally, watching others use tools and technologies enhances my learning experience.</p>",
-  "my_short_term_goals_content": "<p>As a Software Engineer, I recognize the endless learning opportunities in tech. My current focus includes:</p>",
-  "my_short_term_goals_list": "<ul> <li>Data Visualization and Analytics</li> <li>Exploring Machine Learning</li> <li>Enhancing UI/UX design skills</li> <li>Contributing to open-source projects</li></ul>"
+  "heroName": "Fredy Santamaria",
+  "heroTitle": "Software Engineer",
+  "heroTagline": "Passionate about learning, coding, and baking. Building efficient solutions that make a difference.",
+  "journeyTitle": "My Journey",
+  "journey": [
+      { "date": "April 2020", "title": "Started in Tech", "desc": "Began as an IT Support Technician in Kokomo, Indiana, gaining hands-on experience with technology and business operations." },
+      { "date": "April 2022", "title": "Promoted to Software Engineer", "desc": "Advanced to Software Engineer role, focusing on automation, application development, and process optimization." },
+      { "date": "Present", "title": "Growing & Learning", "desc": "Continuously expanding skills in modern web technologies, data analytics, and machine learning while contributing to impactful projects." }
+  ],
+  "experienceTitle": "Experience",
+  "experience": {
+      "company": "Software Engineer at BerryIt, Inc.",
+      "highlights": [
+          "Automated critical business processes with Python, reducing execution time by 25%",
+          "Built scalable applications using Python, JavaScript, C#, Flask, SQL, and Docker",
+          "Led development of time-tracking desktop app, scaling from 5 to 60+ concurrent users",
+          "Improved response times from 10 seconds to under 2 seconds through optimization"
+      ]
+  },
+  "skillsTitle": "Skills",
+  "skills": [
+      { "name": "Python", "category": "Expert" },
+      { "name": "Flask/Django", "category": "Expert" },
+      { "name": "JavaScript", "category": "Proficient" },
+      { "name": "SQL", "category": "Proficient" },
+      { "name": "Docker", "category": "Proficient" },
+      { "name": "Git", "category": "Proficient" },
+      { "name": "React", "category": "Learning" },
+      { "name": "ML/AI", "category": "Learning" }
+  ],
+  "learningTitle": "Learning Approach",
+  "learning": "I believe in learning through reading, comparing, and observing. I dive deep into documentation, compare new concepts with existing knowledge like solving a puzzle, and enhance my understanding by watching how others use tools and technologies.",
+  "goalsTitle": "Current Focus",
+  "goalsIntro": "As a Software Engineer, I recognize the endless opportunities for growth. Currently focusing on:",
+  "goals": [
+      "Data Visualization & Analytics",
+      "Exploring Machine Learning",
+      "Enhancing UI/UX Design Skills",
+      "Contributing to Open Source"
+  ]
 }

@@ -1,15 +1,42 @@
 {
-  "welcome": "Hola, soy Fredy",
-  "about_me": "Me encanta aprender, programar y hacer pan",
-  "my_journey": "Mi Camino Hasta Ahora",
-  "my_experience": "Mi Experiencia como Desarrollador",
-  "what_i_know": "Lo Que Sé",
-  "my_learning_approach": "Mi Enfoque de Aprendizaje",
-  "my_short_term_goals": "Mis Objetivos a Corto Plazo",
-  "my_journey_content": "<p>Comencé mi carrera en tecnología en abril de 2020 como Técnico de Soporte de TI en una empresa local en Kokomo, Indiana, donde adquirí experiencia práctica y una mejor comprensión del sector.</p><p>En abril de 2022, fui promovido a Ingeniero de Software. Desde entonces, he automatizado procesos clave, desarrollado aplicaciones y optimizado operaciones empresariales.</p><p>Mi trayectoria ha estado llena de aprendizaje continuo, innovación y desafíos emocionantes que refuerzan mi pasión por el desarrollo de software.</p>",
-  "my_experience_content": "<p>Ingeniero de Software en BerryIt, Inc.</p><p>Automatización de procesos clave con Python, reduciendo el tiempo de ejecución en un 25% y mejorando la eficiencia general.</p><p>Diseño, desarrollo y mantenimiento de soluciones de software utilizando Python, JavaScript, C#, Flask, SQL, Docker y otras tecnologías para satisfacer las necesidades empresariales.</p><p>Dirigí el desarrollo de una aplicación de escritorio escalable para el seguimiento del tiempo, aumentando la capacidad de usuarios concurrentes de 5 a más de 60 y reduciendo el tiempo de respuesta de 10 segundos a menos de 2 segundos.</p>",
-  "what_i_know_content": "<p>Competente en: Python, Flask, Django, Docker, SQL (MySQL, PostgreSQL, MS SQL), Git, JavaScript, HTML, CSS, entre otros.</p><p>Conocimientos en: Kotlin, Java, C#, Node.js, Express.js, Nginx, Redis y tecnologías relacionadas.</p><p>Actualmente, estoy aprendiendo React, Next.js y Machine Learning con Python.</p>",
-  "my_learning_approach_content": "<p>Lectura, Comparación y Observación.</p><p>Me sumerjo en la documentación y comparo nuevos conocimientos con lo que ya sé, ¡como si resolviera un rompecabezas! Además, ver a otros usar herramientas y tecnologías mejora mi proceso de aprendizaje.</p>",
-  "my_short_term_goals_content": "<p>Como Ingeniero de Software, reconozco las infinitas oportunidades de aprendizaje en el mundo tecnológico. Actualmente, me estoy enfocando en:</p>",
-  "my_short_term_goals_list": "<ul><li>Visualización y Análisis de Datos</li><li>Explorar Machine Learning</li><li>Mejorar habilidades en diseño de UI/UX</li><li>Contribuir a proyectos de código abierto</li></ul>"
+  "heroName": "Fredy Santamaria",
+  "heroTitle": "Ingeniero de Software",
+  "heroTagline": "Apasionado por aprender, programar y hacer pan. Construyendo soluciones eficientes que marcan la diferencia.",
+  "journeyTitle": "Mi Camino",
+  "journey": [
+      { "date": "Abril 2020", "title": "Inicio en Tecnología", "desc": "Comencé como Técnico de Soporte de TI en Kokomo, Indiana, adquiriendo experiencia práctica con tecnología y operaciones empresariales." },
+      { "date": "Abril 2022", "title": "Promoción a Ingeniero de Software", "desc": "Avancé al rol de Ingeniero de Software, enfocándome en automatización, desarrollo de aplicaciones y optimización de procesos." },
+      { "date": "Presente", "title": "Creciendo y Aprendiendo", "desc": "Expandiendo continuamente habilidades en tecnologías web modernas, análisis de datos y machine learning mientras contribuyo a proyectos impactantes." }
+  ],
+  "experienceTitle": "Experiencia",
+  "experience": {
+      "company": "Ingeniero de Software en BerryIt, Inc.",
+      "highlights": [
+          "Automaticé procesos empresariales críticos con Python, reduciendo el tiempo de ejecución en 25%",
+          "Construí aplicaciones escalables usando Python, JavaScript, C#, Flask, SQL y Docker",
+          "Lideré el desarrollo de aplicación de seguimiento de tiempo, escalando de 5 a más de 60 usuarios concurrentes",
+          "Mejoré tiempos de respuesta de 10 segundos a menos de 2 segundos mediante optimización"
+      ]
+  },
+  "skillsTitle": "Habilidades",
+  "skills": [
+      { "name": "Python", "category": "Experto" },
+      { "name": "Flask/Django", "category": "Experto" },
+      { "name": "JavaScript", "category": "Competente" },
+      { "name": "SQL", "category": "Competente" },
+      { "name": "Docker", "category": "Competente" },
+      { "name": "Git", "category": "Competente" },
+      { "name": "React", "category": "Aprendiendo" },
+      { "name": "ML/AI", "category": "Aprendiendo" }
+  ],
+  "learningTitle": "Enfoque de Aprendizaje",
+  "learning": "Creo en aprender a través de lectura, comparación y observación. Me sumerjo en la documentación, comparo conceptos nuevos con conocimientos existentes como resolviendo un rompecabezas, y mejoro mi comprensión viendo cómo otros usan herramientas y tecnologías.",
+  "goalsTitle": "Enfoque Actual",
+  "goalsIntro": "Como Ingeniero de Software, reconozco las infinitas oportunidades de crecimiento. Actualmente enfocándome en:",
+  "goals": [
+      "Visualización y Análisis de Datos",
+      "Explorar Machine Learning",
+      "Mejorar Habilidades de Diseño UI/UX",
+      "Contribuir a Código Abierto"
+  ]
 }
