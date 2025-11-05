@@ -8,28 +8,31 @@
 
   /* Define color variables for each theme */
 :root[data-theme='dark'] {
-    /* Dark theme */
     --bg-primary: #0f0f1e;
+    --bg-card: #16213e;
     --text-primary: #e4e4e7;
-    --card-background-color: #16213e;
+    --border: rgba(139, 92, 246, 0.2);
 }
 
 :root[data-theme='light'] {
     --bg-primary: #ffffff;
+    --bg-card: #ffffff;
     --text-primary: #1a1a2e;
-    --card-background-color: #ffffff;
+    --border: rgba(139, 92, 246, 0.15);
 }
 
 :root[data-theme='purple'] {
     --bg-primary: #faf5ff;
+    --bg-card: #ffffff;
     --text-primary: #4c1d95;
-    --card-background-color: #D9D9FF;
+    --border: rgba(139, 92, 246, 0.25);
 }
 
 :root[data-theme='blue'] {
     --bg-primary: #eff6ff;
+    --bg-card: #ffffff;
     --text-primary: #1e3a8a;
-    --card-background-color: #c7e6ff;
+    --border: rgba(59, 130, 246, 0.25);
 }
 
 body {
@@ -47,14 +50,14 @@ h4, h5, h6 {
     color: var(--main-text-color);
 }
 
-.card-body {
-    background-color: var(--card-background-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: none;
+/* Cards */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
     padding: 2rem;
-    font-size: 1.1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-body:hover {
@@ -136,10 +139,10 @@ h4, h5, h6 {
 .theme-btn {
     width: 32px;
     height: 32px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-    margin-right: 0;
+    border: 2px solid var(--border);
     border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 .dark-theme-btn {
@@ -160,13 +163,12 @@ h4, h5, h6 {
 
 .theme-selector {
     display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.15);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-card);
     border-radius: 12px;
-    backdrop-filter: blur(4px);
-    margin-bottom: 10px;
-    justify-content: space-around;
+    border: 1px solid var(--border);
+
 }
 
 /* Responsive Adjustments for small screens */
