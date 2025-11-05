@@ -11,28 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container mt-5 mb-5">
-
-        <div class="row mb-4 align-items-center">
-
-            <div class="col-xl-3 col-md-4 col-sm-6 col-6">
-                <div class="theme-selector">
-                    <button class="theme-btn dark-theme-btn" onclick="changeTheme('dark')"></button>
-                    <button class="theme-btn light-theme-btn" onclick="changeTheme('light')"></button>
-                    <button class="theme-btn purple-theme-btn" onclick="changeTheme('purple')"></button>
-                    <button class="theme-btn blue-theme-btn" onclick="changeTheme('blue')"></button>
-                </div>
-            </div>
-            <div class="col-xl-9 col-md-8 col-sm-6 col-6 d-flex justify-content-end">
-                <div class="language-selection">
-                    <select id="languageSelect" onchange="changeLanguage()">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="brand">FS</a>
+                <div class="controls">
+                    <div class="theme-selector">
+                        <button class="theme-btn dark-theme-btn" onclick="changeTheme('dark')" aria-label="Dark theme"></button>
+                        <button class="theme-btn light-theme-btn" onclick="changeTheme('light')" aria-label="Light theme"></button>
+                        <button class="theme-btn purple-theme-btn" onclick="changeTheme('purple')" aria-label="Purple theme"></button>
+                        <button class="theme-btn blue-theme-btn" onclick="changeTheme('blue')" aria-label="Blue theme"></button>
+                    </div>
+                    <select id="languageSelect" class="language-select" onchange="changeLanguage()">
                         <option value="en">English</option>
                         <option value="es">Español</option>
                     </select>
                 </div>
             </div>
         </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
 
         <div class="row">
 

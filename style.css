@@ -1,16 +1,18 @@
 /* Define color variables for each color selector */
 :root {
-            --dark-btn: #1a1a2e;
-            --light-btn: #f8f9fa;
-            --purple-btn: #8b5cf6;
-            --blue-btn: #3b82f6;
-        }
+    --dark-btn: #1a1a2e;
+    --light-btn: #f8f9fa;
+    --purple-btn: #8b5cf6;
+    --blue-btn: #3b82f6;
+}
 
   /* Define color variables for each theme */
 :root[data-theme='dark'] {
     --bg-primary: #0f0f1e;
     --bg-card: #16213e;
     --text-primary: #e4e4e7;
+    --accent: #8b5cf6;
+    --accent-hover: #a78bfa;
     --border: rgba(139, 92, 246, 0.2);
 }
 
@@ -122,18 +124,20 @@ h4, h5, h6 {
     border-radius: 2px;
 }
 
-.language-selection {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
+.language-select {
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.2s ease;
 }
 
-.language-selection select {
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
+.language-select:hover {
+    border: var(--accent);
 }
 
 .theme-btn {
@@ -143,6 +147,11 @@ h4, h5, h6 {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dark-theme-btn {
@@ -159,6 +168,39 @@ h4, h5, h6 {
 
 .blue-theme-btn {
     background-color: var(--blue-btn);
+}
+
+/* Navigation Bar */
+.navbar {
+    background: var(--bg-secondary);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .theme-selector {
@@ -189,7 +231,7 @@ h4, h5, h6 {
         margin-bottom: 15px;
     }
     
-    .language-selection {
+    .language-selector {
         width: 100%;
         text-align: center;
     }
