@@ -9,8 +9,10 @@
   /* Define color variables for each theme */
 :root[data-theme='dark'] {
     --bg-primary: #0f0f1e;
+    --bg-secondary: #1a1a2e;
     --bg-card: #16213e;
     --text-primary: #e4e4e7;
+    --text-secondary: #a1a1aa;
     --accent: #8b5cf6;
     --accent-hover: #a78bfa;
     --border: rgba(139, 92, 246, 0.2);
@@ -18,22 +20,34 @@
 
 :root[data-theme='light'] {
     --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
     --bg-card: #ffffff;
     --text-primary: #1a1a2e;
+    --text-secondary: #6b7280;
+    --accent: #8b5cf6;
+    --accent-hover: #7c3aed;
     --border: rgba(139, 92, 246, 0.15);
 }
 
 :root[data-theme='purple'] {
     --bg-primary: #faf5ff;
+    --bg-secondary: #f3e8ff;
     --bg-card: #ffffff;
     --text-primary: #4c1d95;
+    --text-secondary: #7c3aed;
+    --accent: #8b5cf6;
+    --accent-hover: #7c3aed;
     --border: rgba(139, 92, 246, 0.25);
 }
 
 :root[data-theme='blue'] {
     --bg-primary: #eff6ff;
+    --bg-secondary: #dbeafe;
     --bg-card: #ffffff;
     --text-primary: #1e3a8a;
+    --text-secondary: #3b82f6;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
     --border: rgba(59, 130, 246, 0.25);
 }
 
