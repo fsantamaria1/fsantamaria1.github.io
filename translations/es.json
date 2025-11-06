@@ -53,7 +53,7 @@
   ],
   "skillsTitle": "Habilidades Técnicas",
   "skills": {
-    "expert": [
+    "advanced": [
       "Python",
       "Flask",
       "Django",

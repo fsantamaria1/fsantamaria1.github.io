@@ -49,9 +49,9 @@ function fetchLanguageContent(language) {
         // Skills
         const skillsHTML = `
             <div class="skill-section">
-        <div class="skill-section-title">${language === 'en' ? 'Expert' : 'Experto'}</div>
+        <div class="skill-section-title">${language === 'en' ? 'Advanced' : 'Avanzado'}</div>
         <div class="skill-tags">
-            ${data.skills.expert.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+            ${data.skills.advanced.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
         </div>
     </div>
     <div class="skill-section">
