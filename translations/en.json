@@ -1,15 +1,102 @@
 {
-  "welcome": "Hi, I'm Fredy",
-  "about_me": "I love learning, coding, and baking",
-  "my_journey": "My Journey So Far",
-  "my_experience": "My Experience as a Developer",
-  "what_i_know": "What I Know",
-  "my_learning_approach": "My Learning Approach",
-  "my_short_term_goals": "My Short-Term Goals",
-  "my_journey_content": "<p>I started my career in tech in April of 2020 as an IT Support Technician at a local company in Kokomo, Indiana, where I learned a lot of new and exciting things.</p> <p>In April 2022, I was promoted to Software Developer. Since then, I have been automating and improving processes, as well as creating various software to fulfill business needs.</p> <p>It has been an exciting journey filled with opportunities for growth and innovation.</p>",
-  "my_experience_content": "<p>Software Developer at BerryIt, Inc.</p> <p>Automated critical processes using Python, leading to significant time savings and enhancing operational efficiency.</p> <p>Developed and maintained diverse applications utilizing a range of programming languages and tools (Python, SQL, HTML, CSS, Docker, Flask, JavaScript, C#, Nginx, Redis) while ensuring compatibility with evolving business needs.</p>",
-  "what_i_know_content": "<p>I am proficient in the following: Python, Flask, Django, Docker, HTML, CSS, MySQL, PostgreSQL, MS SQL, Git, JavaScript, and more...</p> <p>I also have some knowledge of: Kotlin, Java, C#, Node.js, Express.js, Nginx, Redis, etc.</p> <p>Currently, I am learning React, Next.js, and Machine Learning with Python.</p>",
-  "my_learning_approach_content": "<p>Reading, Comparing, and Watching.</p> <p>When it comes to learning, I'm all about diving into documentation and then connecting the dots with what I already know. It's like solving a puzzle! Plus, watching others use the tool or technology I'm interested in makes the learning process a lot easier for me.</p>",
-  "my_short_term_goals_content": "<p>After being a Software Developer for almost two years, I've come to realize that the tech world is full of learning opportunities. Currently, I'm focusing on the following objectives:</p>",
-  "my_short_term_goals_list": "<ul> <li>Data Visualization and Data Analytics</li> <li>Exploring Machine Learning</li> <li>Crafting visually appealing UIs</li> <li>Engaging in collaborative open-source projects</li></ul>"
+  "heroName": "Fredy Santamaria",
+  "heroTitle": "Software Engineer | Data Analytics",
+  "heroEducation": "M.S. Data Analytics (In Progress) • B.S. Computer Science • A.S. Cybersecurity",
+  "heroTagline": "Building efficient, scalable solutions that drive measurable business impact. Passionate about automation, data-driven insights, and continuous learning.",
+  "journeyTitle": "My Journey",
+  "journey": [
+    {
+      "date": "January 2020 - September 2020",
+      "title": "Student Ambassador & Lab Assistant | Ivy Tech",
+      "desc": "Provided technical support to students with software, hardware, and network issues. Engaged with prospective students about college programs and events."
+    },
+    {
+      "date": "April 2020 - April 2022",
+      "title": "IT Support Technician | Berry It",
+      "desc": "Installed and optimized MySQL and MS SQL database systems. Led internal projects including migrations, software development, and hardware upgrades. Reduced system downtime through proactive technical support."
+    },
+    {
+      "date": "April 2022 - Present",
+      "title": "Software Engineer | Berry It",
+      "desc": "Full-stack development and automation specialist. Building production-grade applications that solve real business problems and deliver measurable results."
+    }
+  ],
+  "impactTitle": "Key Achievements",
+  "impact": [
+    "Built geospatial API integrating Vetro data to automate 811 ticket routing — saved ~30 hours/week",
+    "Led full-stack development of time-tracking desktop app (C#, Flask, MS SQL) — saved ~20 hours/week in admin overhead",
+    "Automated time adjustment reminders via ADP API and SlickText API — saved HR ~5 hours/week",
+    "Developed and maintained diverse production applications using Python, JavaScript, C#, Flask, SQL, Redis ensuring scalability and reliability"
+  ],
+  "educationTitle": "Education",
+  "education": [
+    {
+      "school": "Western Governors University",
+      "degree": "M.S. Data Analytics",
+      "status": "Expected April 2026"
+    },
+    {
+      "school": "Western Governors University",
+      "degree": "B.S. Computer Science",
+      "status": "Completed"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Cybersecurity",
+      "status": "Completed"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Liberal Arts",
+      "status": "Completed"
+    }
+  ],
+  "skillsTitle": "Technical Skills",
+  "skills": {
+    "advanced": [
+      "Python",
+      "Flask",
+      "Django",
+      "SQL (MySQL, PostgreSQL, MS SQL)",
+      "Git",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "proficient": [
+      "Docker",
+      "REST APIs",
+      "Redis",
+      "C#",
+      "OOP",
+      "CI/CD",
+      "Agile",
+      "Nginx",
+      "jQuery",
+      "ETL"
+    ],
+    "learning": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Machine Learning",
+      "PyTorch",
+      "Scikit-Learn",
+      "TensorFlow",
+      "Apache Airflow",
+      "Azure (AZ-204)"
+    ]
+  },
+  "learningTitle": "Learning Approach",
+  "learning": "I believe in <strong>Reading, Comparing, and Observing</strong>. I dive deep into documentation, connect new concepts with existing knowledge like solving a puzzle, and enhance my understanding by watching how experienced developers use tools and technologies. This multi-faceted approach helps me not just learn syntax, but understand the 'why' behind technical decisions.",
+  "goalsTitle": "Current Focus",
+  "goalsIntro": "As a Software Engineer pursuing a Master's in Data Analytics, I'm focused on the intersection of software engineering and data science:",
+  "goals": [
+    "Mastering data visualization and analytics tools (Tableau, BigQuery, R)",
+    "Deepening machine learning expertise with PyTorch and TensorFlow",
+    "Building full-stack applications with React and Next.js",
+    "Preparing for Azure Developer Associate (AZ-204) certification",
+    "Contributing to open-source projects in data engineering"
+  ]
 }

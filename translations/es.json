@@ -1,15 +1,102 @@
 {
-  "welcome": "Hola, soy Fredy",
-  "about_me": "Me encanta aprender, programar y hacer pan",
-  "my_journey": "Mi Camino Hasta Ahora",
-  "my_experience": "Mi Experiencia como Desarrollador",
-  "what_i_know": "Lo Que Sé",
-  "my_learning_approach": "Mi Enfoque de Aprendizaje",
-  "my_short_term_goals": "Mis Objetivos a Corto Plazo",
-  "my_journey_content": "<p>Comencé mi carrera en el area de tecnología en abril del 2020 como Técnico de Soporte de TI en una empresa local en Kokomo, Indiana, donde aprendí muchas cosas nuevas y emocionantes.</p><p>En abril de 2022, obtuve el puesto de Desarrollador de Software. Desde entonces, he estado automatizando y mejorando procesos, también creando programas dependiendo de las necesidades de la empresa.</p><p>Ha sido un trabajo emocionante lleno de oportunidades de crecimiento e innovación.</p>",
-  "my_experience_content": "<p>Desarrollador de Software en BerryIt, Inc.</p><p>Automatización de procesos críticos utilizando Python, lo que ha llevado a un ahorro de tiempo significativo y a mejorar la eficiencia los sistemas.</p><p>He desarrollado diversas aplicaciones utilizando una variedad de lenguajes de programación y herramientas (Python, SQL, HTML, CSS, Docker, Flask, JavaScript, C#, Nginx, Redis) asegurando el cumplimiento con las necesidades comerciales que evolucionan dia a dia.</p>",
-  "what_i_know_content": "<p>Soy competente en lo siguiente: Python, Flask, Django, Docker, HTML, CSS, MySQL, PostgreSQL, MS SQL, Git, JavaScript, y más...</p><p>También tengo conocimientos en: Kotlin, Java, C#, Node.js, Express.js, Nginx, Redis, etc.</p><p>Actualmente, estoy aprendiendo React, Next.js y Machine Learning con Python.</p>",
-  "my_learning_approach_content": "<p>Lectura, Comparación y Observación.</p><p>Cuando se trata de aprender, me gusta leer la documentación y luego comparar lo nuevo que aprendí con lo que ya sé. ¡Es como resolver un rompecabezas! Además, ver a otros usar la herramienta o tecnología en la que estoy interesado hace que el proceso de aprendizaje sea mucho más fácil para mí.</p>",
-  "my_short_term_goals_content": "<p>Después de ser Desarrollador de Software durante casi dos años, me he dado cuenta de que el mundo tecnológico está lleno de oportunidades de aprendizaje. Actualmente, me estoy centrando en los siguientes objetivos:</p>",
-  "my_short_term_goals_list": "<ul><li>Visualización y Analísis de Datos</li><li>Explorar Machine Learning</li><li>Saber crear interfaces de usuario visualmente atractivas</li><li>Participar en proyectos de open source</li></ul>"
+  "heroName": "Fredy Santamaria",
+  "heroTitle": "Ingeniero de Software | Análisis de Datos",
+  "heroEducation": "M.S. Análisis de Datos (En Curso) • B.S. Ciencias de la Computación • A.S. Ciberseguridad",
+  "heroTagline": "Construyendo soluciones eficientes y escalables que generan un impacto empresarial medible. Apasionado por la automatización, insights basados en datos y el aprendizaje continuo.",
+  "journeyTitle": "Mi Camino",
+  "journey": [
+    {
+      "date": "Enero 2020 - Septiembre 2020",
+      "title": "Embajador Estudiantil y Asistente de Laboratorio | Ivy Tech",
+      "desc": "Proporcioné soporte técnico a estudiantes con problemas de software, hardware y red. Interactué con estudiantes potenciales sobre programas y eventos universitarios."
+    },
+    {
+      "date": "Abril 2020 - Abril 2022",
+      "title": "Técnico de Soporte de TI | Berry It",
+      "desc": "Instalé y optimicé sistemas de bases de datos MySQL y MS SQL. Lideré proyectos internos incluyendo migraciones, desarrollo de software y actualizaciones de hardware. Reduje el tiempo de inactividad del sistema mediante soporte técnico proactivo."
+    },
+    {
+      "date": "Abril 2022 - Presente",
+      "title": "Ingeniero de Software | Berry It",
+      "desc": "Especialista en desarrollo full-stack y automatización. Construyendo aplicaciones de grado de producción que resuelven problemas empresariales reales y entregan resultados medibles."
+    }
+  ],
+  "impactTitle": "Logros Clave",
+  "impact": [
+    "Construí API geoespacial integrando datos de Vetro para automatizar enrutamiento de tickets 811 — ahorré ~30 horas/semana",
+    "Lideré desarrollo full-stack de aplicación de seguimiento de tiempo (C#, Flask, MS SQL) — ahorré ~20 horas/semana en administración",
+    "Automaticé recordatorios de ajuste de tiempo vía ADP API y SlickText API — ahorré a RRHH ~5 horas/semana",
+    "Desarrollé y mantuve diversas aplicaciones de producción usando Python, JavaScript, C#, Flask, SQL, Redis asegurando escalabilidad y confiabilidad"
+  ],
+  "educationTitle": "Educación",
+  "education": [
+    {
+      "school": "Western Governors University",
+      "degree": "M.S. Análisis de Datos",
+      "status": "Esperado Abril 2026"
+    },
+    {
+      "school": "Western Governors University",
+      "degree": "B.S. Ciencias de la Computación",
+      "status": "Completado"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Ciberseguridad",
+      "status": "Completado"
+    },
+    {
+      "school": "Ivy Tech Community College",
+      "degree": "A.S. Artes Liberales",
+      "status": "Completado"
+    }
+  ],
+  "skillsTitle": "Habilidades Técnicas",
+  "skills": {
+    "advanced": [
+      "Python",
+      "Flask",
+      "Django",
+      "SQL (MySQL, PostgreSQL, MS SQL)",
+      "Git",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "proficient": [
+      "Docker",
+      "REST APIs",
+      "Redis",
+      "C#",
+      "OOP",
+      "CI/CD",
+      "Agile",
+      "Nginx",
+      "jQuery",
+      "ETL"
+    ],
+    "learning": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Machine Learning",
+      "PyTorch",
+      "Scikit-Learn",
+      "TensorFlow",
+      "Apache Airflow",
+      "Azure (AZ-204)"
+    ]
+  },
+  "learningTitle": "Enfoque de Aprendizaje",
+  "learning": "Creo en <strong>Leer, Comparar y Observar</strong>. Me sumerjo en la documentación, conecto nuevos conceptos con conocimientos existentes como resolviendo un rompecabezas, y mejoro mi comprensión viendo cómo desarrolladores experimentados usan herramientas y tecnologías. Este enfoque multifacético me ayuda no solo a aprender sintaxis, sino a entender el 'por qué' detrás de las decisiones técnicas.",
+  "goalsTitle": "Enfoque Actual",
+  "goalsIntro": "Como Ingeniero de Software que cursa una Maestría en Análisis de Datos, me enfoco en la intersección de la ingeniería de software y la ciencia de datos:",
+  "goals": [
+    "Dominar herramientas de visualización y análisis de datos (Tableau, BigQuery, R)",
+    "Profundizar experiencia en machine learning con PyTorch y TensorFlow",
+    "Construir aplicaciones full-stack con React y Next.js",
+    "Preparándome para certificación Azure Developer Associate (AZ-204)",
+    "Contribuir a proyectos de código abierto en ingeniería de datos"
+  ]
 }
